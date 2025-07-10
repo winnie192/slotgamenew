@@ -1,0 +1,62 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+yarn-debug.log
+yarn.lock
+
+# Logs
+logs
+*.log
+
+# Build output
+dist/
+build/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+
+# System
+Thumbs.db
+Desktop.ini
+
+# Go
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Firebase
+firebase-debug.log
+
+# Android/Java
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+/local.properties
+/.idea
+*.apk
+*.ap_
+package-lock.json
+frontend/firebase/META-INF/

@@ -1,0 +1,120 @@
+package cmd
+
+import (
+	// Keno
+	_ "github.com/winnie192/slotgame/server/game/keno/americankeno"
+	_ "github.com/winnie192/slotgame/server/game/keno/firekeno"
+	_ "github.com/winnie192/slotgame/server/game/keno/kenocenturion"
+	_ "github.com/winnie192/slotgame/server/game/keno/kenofast"
+	_ "github.com/winnie192/slotgame/server/game/keno/kenoluxury"
+
+	// Megajack
+	_ "github.com/winnie192/slotgame/server/game/slot/megajack/aztecgold"
+	_ "github.com/winnie192/slotgame/server/game/slot/megajack/champagne"
+	_ "github.com/winnie192/slotgame/server/game/slot/megajack/slotgame"
+	_ "github.com/winnie192/slotgame/server/game/slot/megajack/slotgamedeluxe"
+
+	// Novomatic
+	_ "github.com/winnie192/slotgame/server/game/slot/novomatic/africansimba"
+	_ "github.com/winnie192/slotgame/server/game/slot/novomatic/alwayshot"
+	_ "github.com/winnie192/slotgame/server/game/slot/novomatic/bananasgobahamas"
+	_ "github.com/winnie192/slotgame/server/game/slot/novomatic/beetlemania"
+	_ "github.com/winnie192/slotgame/server/game/slot/novomatic/bookofra"
+	_ "github.com/winnie192/slotgame/server/game/slot/novomatic/chicago"
+	_ "github.com/winnie192/slotgame/server/game/slot/novomatic/columbus"
+	_ "github.com/winnie192/slotgame/server/game/slot/novomatic/dolphinspearl"
+	_ "github.com/winnie192/slotgame/server/game/slot/novomatic/dragonsdeep"
+	_ "github.com/winnie192/slotgame/server/game/slot/novomatic/dynastyofra"
+	_ "github.com/winnie192/slotgame/server/game/slot/novomatic/fairyqueen"
+	_ "github.com/winnie192/slotgame/server/game/slot/novomatic/fruitilicious"
+	_ "github.com/winnie192/slotgame/server/game/slot/novomatic/helena"
+	_ "github.com/winnie192/slotgame/server/game/slot/novomatic/inferno"
+	_ "github.com/winnie192/slotgame/server/game/slot/novomatic/jaguarmoon"
+	_ "github.com/winnie192/slotgame/server/game/slot/novomatic/jewels"
+	_ "github.com/winnie192/slotgame/server/game/slot/novomatic/jewels4all"
+	_ "github.com/winnie192/slotgame/server/game/slot/novomatic/justjewels"
+	_ "github.com/winnie192/slotgame/server/game/slot/novomatic/katana"
+	_ "github.com/winnie192/slotgame/server/game/slot/novomatic/kingsjester"
+	_ "github.com/winnie192/slotgame/server/game/slot/novomatic/lovelymermaid"
+	_ "github.com/winnie192/slotgame/server/game/slot/novomatic/megajoker"
+	_ "github.com/winnie192/slotgame/server/game/slot/novomatic/plentyofjewels20"
+	_ "github.com/winnie192/slotgame/server/game/slot/novomatic/plentyontwenty"
+	_ "github.com/winnie192/slotgame/server/game/slot/novomatic/powerstars"
+	_ "github.com/winnie192/slotgame/server/game/slot/novomatic/roaringforties"
+	_ "github.com/winnie192/slotgame/server/game/slot/novomatic/royaldynasty"
+	_ "github.com/winnie192/slotgame/server/game/slot/novomatic/secretelixir"
+	_ "github.com/winnie192/slotgame/server/game/slot/novomatic/sizzlinghot"
+	_ "github.com/winnie192/slotgame/server/game/slot/novomatic/ultrahot"
+	_ "github.com/winnie192/slotgame/server/game/slot/novomatic/ultrasevens"
+
+	// BetSoft
+	_ "github.com/winnie192/slotgame/server/game/slot/betsoft/2millionbc"
+	_ "github.com/winnie192/slotgame/server/game/slot/betsoft/atthemovies"
+
+	// NetEnt
+	_ "github.com/winnie192/slotgame/server/game/slot/netent/arabiannights"
+	_ "github.com/winnie192/slotgame/server/game/slot/netent/diamonddogs"
+	_ "github.com/winnie192/slotgame/server/game/slot/netent/fruitshop"
+	_ "github.com/winnie192/slotgame/server/game/slot/netent/groovysixties"
+	_ "github.com/winnie192/slotgame/server/game/slot/netent/piggyriches"
+	_ "github.com/winnie192/slotgame/server/game/slot/netent/reelsteal"
+	_ "github.com/winnie192/slotgame/server/game/slot/netent/simsalabim"
+	_ "github.com/winnie192/slotgame/server/game/slot/netent/spellcast"
+	_ "github.com/winnie192/slotgame/server/game/slot/netent/thrillspin"
+	_ "github.com/winnie192/slotgame/server/game/slot/netent/tikiwonders"
+	_ "github.com/winnie192/slotgame/server/game/slot/netent/trolls"
+
+	// Playtech
+	_ "github.com/winnie192/slotgame/server/game/slot/playtech/captainstreasure"
+	_ "github.com/winnie192/slotgame/server/game/slot/playtech/deserttreasure"
+	_ "github.com/winnie192/slotgame/server/game/slot/playtech/goldentour"
+	_ "github.com/winnie192/slotgame/server/game/slot/playtech/greatblue"
+	_ "github.com/winnie192/slotgame/server/game/slot/playtech/panthermoon"
+
+	// Play'n GO
+	_ "github.com/winnie192/slotgame/server/game/slot/playngo/copsnrobbers"
+	_ "github.com/winnie192/slotgame/server/game/slot/playngo/firejoker"
+	_ "github.com/winnie192/slotgame/server/game/slot/playngo/fortuneteller"
+
+	// Aristocrat
+	_ "github.com/winnie192/slotgame/server/game/slot/aristocrat/indiandreaming"
+	_ "github.com/winnie192/slotgame/server/game/slot/aristocrat/redroo"
+
+	// AGT
+	_ "github.com/winnie192/slotgame/server/game/slot/agt/aislot"
+	_ "github.com/winnie192/slotgame/server/game/slot/agt/aladdin"
+	_ "github.com/winnie192/slotgame/server/game/slot/agt/cherryhot"
+	_ "github.com/winnie192/slotgame/server/game/slot/agt/doubleice"
+	_ "github.com/winnie192/slotgame/server/game/slot/agt/egypt"
+	_ "github.com/winnie192/slotgame/server/game/slot/agt/extraspin"
+	_ "github.com/winnie192/slotgame/server/game/slot/agt/extraspin3"
+	_ "github.com/winnie192/slotgame/server/game/slot/agt/fruitqueen"
+	_ "github.com/winnie192/slotgame/server/game/slot/agt/gems"
+	_ "github.com/winnie192/slotgame/server/game/slot/agt/gems50"
+	_ "github.com/winnie192/slotgame/server/game/slot/agt/halloween"
+	_ "github.com/winnie192/slotgame/server/game/slot/agt/hotclover"
+	_ "github.com/winnie192/slotgame/server/game/slot/agt/icefruits"
+	_ "github.com/winnie192/slotgame/server/game/slot/agt/iceiceice"
+	_ "github.com/winnie192/slotgame/server/game/slot/agt/icequeen"
+	_ "github.com/winnie192/slotgame/server/game/slot/agt/infinitygems"
+	_ "github.com/winnie192/slotgame/server/game/slot/agt/jokers"
+	_ "github.com/winnie192/slotgame/server/game/slot/agt/jokers100"
+	_ "github.com/winnie192/slotgame/server/game/slot/agt/luckyslot"
+	_ "github.com/winnie192/slotgame/server/game/slot/agt/merrychristmas"
+	_ "github.com/winnie192/slotgame/server/game/slot/agt/panda"
+	_ "github.com/winnie192/slotgame/server/game/slot/agt/santa"
+	_ "github.com/winnie192/slotgame/server/game/slot/agt/sevenhot"
+	_ "github.com/winnie192/slotgame/server/game/slot/agt/shiningstars"
+	_ "github.com/winnie192/slotgame/server/game/slot/agt/shiningstars100"
+	_ "github.com/winnie192/slotgame/server/game/slot/agt/suncity"
+	_ "github.com/winnie192/slotgame/server/game/slot/agt/valentinesday"
+	_ "github.com/winnie192/slotgame/server/game/slot/agt/valkyrie"
+	_ "github.com/winnie192/slotgame/server/game/slot/agt/wizard"
+
+	// IGT
+	_ "github.com/winnie192/slotgame/server/game/slot/igt/cleopatra"
+	_ "github.com/winnie192/slotgame/server/game/slot/igt/doublediamond"
+	_ "github.com/winnie192/slotgame/server/game/slot/igt/richgirl"
+	_ "github.com/winnie192/slotgame/server/game/slot/igt/triplediamond"
+	_ "github.com/winnie192/slotgame/server/game/slot/igt/wolfrun"
+)
